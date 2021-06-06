@@ -1,0 +1,29 @@
+<section class="login-section">
+    <div class="login-main register-main">
+        <h3 class="login-title">Sign Up</h3>
+        <form action="/register" method="POST">
+            <div class="login-data">
+                <div class="form-group">
+                    <input class="name-input" type="text" placeholder="Name" name="name" value="{{name}}">
+                </div>
+                <div class="form-group">
+                    <input class="email-input" type="email" placeholder="Email" name="email" value="{{email}}">
+                </div>
+                <div class="form-group">
+                    <input class="password-input" type="password" placeholder="Password" name="password" value="{{password}}">
+                </div>
+                <div class="form-group">
+                    <input class="password-input" type="password" placeholder="Confirm Password" name="confirm_password" value="{{confirm_password}}">
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Ld1ORcbAAAAAEMOuKD-nu1idoSQN0v26a1JFhgZ"></div>
+                </div>
+                <div class="form-group">
+                    <button class="send-btn" type="submit">
+                        Register
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

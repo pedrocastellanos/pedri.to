@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedri.To || Modern URL Shortener</title>
+    <link rel="icon" type="image/png"  href="/assets/favicon.png">
+    {{!-- FontAwesome CSS --}}
+    <link rel="stylesheet" href="/css/css/all.min.css">
+    {{!-- Custom CSS --}}
+    <link rel="stylesheet" href="/css/errors.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    {{>navigation}}
+    
+    {{{body}}}
+    {{> messages}}
+    {{> errors}}
+    
+    {{>footer}}
+    {{!-- <script src="/js/sweetalert2@9.js"></script> --}}
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/jquery-slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+</html> 

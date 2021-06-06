@@ -1,0 +1,31 @@
+{
+  "name": "pedri.to",
+  "version": "1.0.0",
+  "description": "A modern URL shortener",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js --ignore urls.json && users.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "gulp": "^4.0.2",
+    "method-override": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "lowdb": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

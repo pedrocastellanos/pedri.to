@@ -1,0 +1,38 @@
+{{#if urls}}
+    <div class="urls-main">
+        <div class="urls">
+            {{#each urls}}
+                <form action="/delete/{{id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Long URL: 
+                                <button type="submit" class="fas fa-trash"></button>
+                            </h2>
+                            <h4 class="card-subtitle">{{oldurl}}</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3>Short URL: 
+                                <span>{{newurl}}
+                                    <i class="fas fa-copy" data-clipboard-text={{newurl}}></i>
+                                </span>
+                            </h3>
+                            <h3>Clicks: <span>{{clicks}}</span></h3>
+                        </div>
+                    </div>
+                </form>
+            {{/each}}
+        </div>
+    </div>        
+            {{else}}
+            <div class="urls-main nothing">
+                <div class="card card-options">
+                    <div class="card-header">
+                        <h2 class="card-title">Haven´t nothing to show</h2>
+                    </div>
+                </div>
+            </div>
+        {{/if}}            
+    </div>
+</div>
+

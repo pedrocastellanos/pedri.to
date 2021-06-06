@@ -1,0 +1,19 @@
+<header>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="/">P<span></span>T</a></div>
+                <ul class="menu">
+                    <li class="menu_item"><a class="menu_link" href="/">Home</a></li>
+                    <li class="menu_item"><a class="menu_link" href="/about">About</a></li>
+                    {{#if user}}
+                        <li class="menu_item"><a class="menu_link" href="/myurls">My URL`s</a></li>                    
+                        <li class="menu_item"><a class="menu_link" href="/logout"><i class="fas fa-power-off"></i></a></li>
+                    {{else}}
+                        <li class="menu_item"><a class="menu_link" href="/login">Login</a></li>
+                        <li class="menu_item"><a class="menu_link" href="/register">Register</a></li>
+                    {{/if}}                    
+                </ul>
+                <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </nav>
+</header>
